@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selva Babu Selvamani | Bioinformatics Research Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0b132b;
+            --secondary: #f7fbff;
+            --accent: #2563eb;
+            --accent-soft: #e6f0ff;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--secondary);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(247, 251, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: var(--primary);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 6rem 2rem;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 5rem;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.6rem;
+            line-height: 1.1;
+            margin-bottom: 1.2rem;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            max-width: 550px;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+
+        .hero-image {
+            height: 420px;
+            border-radius: 18px;
+            background: radial-gradient(circle at 30% 40%, #e6f0ff 0%, transparent 50%),
+                        radial-gradient(circle at 70% 70%, #dbeafe 0%, transparent 50%),
+                        #f8fbff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            max-width: 650px;
+            margin-bottom: 3rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.8rem;
+            transition: all 0.35s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .project-tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.7rem;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.6rem;
+            font-size: 1.2rem;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: white;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            padding: 2rem;
+        }
+
+        .skill-category h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 0.4rem 0;
+            color: var(--text-light);
+        }
+
+        footer {
+            background: #0b132b;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .visitor-counter {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 900px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container">
+        <a href="#" class="logo">Selva Babu Selvamani</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-container">
+        <div>
+            <h1>Bioinformatics Research Scholar</h1>
+            <p class="subtitle">
+                Genomics • Transcriptomics • NGS • Multi-Omics Analysis
+            </p>
+            <p>
+                I am Selva Babu Selvamani, a Bioinformatics Research Scholar specializing in 
+                genomics, transcriptomics, RNA-Seq, metagenomics, and advanced NGS data analysis. 
+                My research focuses on decoding complex biological datasets using Python, R, and 
+                high-performance bioinformatics pipelines.
+            </p>
+            <a href="#publications" class="btn btn-primary">View Publications</a>
+            <a href="https://scholar.google.com/citations?user=iwRo9MUAAAAJ&hl=en" 
+               target="_blank" 
+               class="btn btn-secondary">Google Scholar</a>
+        </div>
+
+        <div class="hero-image">🧬</div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">
+        Passionate bioinformatics researcher with expertise in genomics, omics, and computational biology.
+    </p>
+    <p>
+        I hold a Master's degree in Bioinformatics and currently work as a Research Fellow in Genomics. 
+        My research spans genome assembly, transcriptomics, metagenomics, and multi-omics integration 
+        to understand biological mechanisms in plants, insects, and microbial systems.
+    </p>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Research Projects</h2>
+    <p class="section-subtitle">
+        Selected bioinformatics and genomics projects involving RNA-Seq, genome analysis, and omics data.
+    </p>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <span class="project-tag">RNA-Seq</span>
+            <h3>Drought-Responsive miRNA Analysis in Rice</h3>
+            <p>Identified novel and known miRNAs using small RNA sequencing and performed differential expression and target gene analysis.</p>
+        </div>
+
+        <div class="project-card">
+            <span class="project-tag">Genomics</span>
+            <h3>Genome Assembly & Functional Annotation</h3>
+            <p>Assembled and annotated genomes of insects and microbes using CANU, SPAdes, MAKER, and AUGUSTUS pipelines.</p>
+        </div>
+
+        <div class="project-card">
+            <span class="project-tag">Metagenomics</span>
+            <h3>Soil & Insect Microbiome Analysis</h3>
+            <p>Performed metagenomic taxonomic profiling and diversity analysis using QIIME2 and Kraken2.</p>
+        </div>
+    </div>
+</section>
+
+<section id="publications">
+    <h2 class="section-title">Publications</h2>
+    <p class="section-subtitle">
+        Peer-reviewed publications and book chapters in bioinformatics, genomics, and omics research.
+    </p>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <span class="project-tag">Google Scholar</span>
+            <h3>Complete Publication List</h3>
+            <p>
+                View all my research publications, citations, and academic metrics on my Google Scholar profile.
+            </p>
+            <a href="https://scholar.google.com/citations?user=iwRo9MUAAAAJ&hl=en" target="_blank">
+                Visit Google Scholar Profile →
+            </a>
+        </div>
+
+        <div class="project-card">
+            <span class="project-tag">2025</span>
+            <h3>Long noncoding RNAs in response to bacterial blight in rice</h3>
+            <p>Physiological and Molecular Plant Pathology</p>
+        </div>
+
+        <div class="project-card">
+            <span class="project-tag">Scientific Data</span>
+            <h3>Miniature genome of broad mite (Polyphagotarsonemus latus)</h3>
+            <p>Genome assembly and genomic resource development</p>
+        </div>
+
+        <div class="project-card">
+            <span class="project-tag">Cancer Genomics</span>
+            <h3>ATF2 loss promotes 5-FU resistance via ATR-Chk1 pathway</h3>
+            <p>BMC Cancer</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <p class="section-subtitle">
+        Core competencies in bioinformatics, programming, and omics data analysis.
+    </p>
+
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3>Bioinformatics</h3>
+            <ul class="skill-list">
+                <li>NGS Data Analysis</li>
+                <li>Genome Assembly & Annotation</li>
+                <li>RNA-Seq (mRNA, lncRNA, small RNA)</li>
+                <li>Metagenomics & Omics Integration</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Programming</h3>
+            <ul class="skill-list">
+                <li>Python</li>
+                <li>R Programming</li>
+                <li>Shell Scripting</li>
+                <li>C / C++</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Tools & Pipelines</h3>
+            <ul class="skill-list">
+                <li>GATK, Trinity, Salmon, Kallisto</li>
+                <li>SPAdes, CANU, MAKER, AUGUSTUS</li>
+                <li>QIIME2, Kraken2</li>
+                <li>Snakemake, Nextflow, Conda</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">
+        Open to PhD opportunities, collaborations, and research discussions.
+    </p>
+    <p>Email: selkash2016@gmail.com</p>
+    <p>Google Scholar: 
+        <a href="https://scholar.google.com/citations?user=iwRo9MUAAAAJ&hl=en" target="_blank">
+            https://scholar.google.com/citations?user=iwRo9MUAAAAJ
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Selva Babu Selvamani | Bioinformatics Research Portfolio</p>
+    <div class="visitor-counter">
+        🌍 Visitors: <span id="visitor-count">Loading...</span>
+    </div>
+</footer>
+
+<script>
+// Visitor Counter using CountAPI (Free & GitHub Pages compatible)
+fetch("https://api.countapi.xyz/hit/selva-babu-portfolio/visits")
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("visitor-count").innerText = data.value;
+    })
+    .catch(() => {
+        document.getElementById("visitor-count").innerText = "N/A";
+    });
+</script>
+
+</body>
+</html>
