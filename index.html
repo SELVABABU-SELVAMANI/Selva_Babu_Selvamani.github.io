@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Selva Babu Selvamani - Bioinformatics Researcher specializing in genomics, transcriptomics, and computational biology">
+    <meta name="description" content="Selva Babu Selvamani - Bioinformatics Researcher specializing in genomics, transcriptomics, and systems biology">
     <title>Selva Babu Selvamani - Bioinformatics Researcher</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,14 +146,11 @@
         }
         .hero-photo-wrap {
             position: relative;
-            width: 340px;
+            width: 380px;
             flex-shrink: 0;
             opacity: 0;
             animation: fadeInUp 1s ease 0.9s forwards;
-        }
-            flex-shrink: 0;
-            opacity: 0;
-            animation: fadeInUp 1s ease 0.9s forwards;
+            overflow: visible;
         }
         .hero-photo-wrap::before {
             content: '';
@@ -173,16 +170,17 @@
             z-index: -1;
         }
         .hero-photo {
-            width: 340px; height: 340px;
+            width: 420px;
+            height: 420px;
             border-radius: 50%;
             object-fit: cover;
-            object-position: center top;
+            object-position: center center;
             border: 5px solid white;
             box-shadow: 0 20px 60px rgba(30,64,175,0.2);
             display: block;
         }
         .hero-photo-placeholder {
-            width: 340px; height: 340px;
+            width: 420px; height: 420px;
             border-radius: 50%;
             border: 5px solid white;
             box-shadow: 0 20px 60px rgba(30,64,175,0.2);
@@ -221,7 +219,7 @@
         .about-photo {
             width: 300px; height: 370px;
             object-fit: cover;
-            object-position: center top;
+            object-position: center 10%;
             border: 4px solid white;
             box-shadow: 0 16px 50px var(--shadow);
             display: block;
@@ -1341,7 +1339,7 @@
             <!-- Replace the placeholder below with: <img src="profile.jpg" alt="Selva Babu Selvamani" class="hero-photo"> -->
             <div class="hero-photo-wrap">
                 <div class="hero-photo-placeholder">
-                    <img src="profile.jpeg" alt="Selva Babu Selvamani" class="hero-photo">
+                    <img src="logo.png" alt="Selva Babu Selvamani" class="hero-photo">
                 </div>
             </div>
         </div>
@@ -1371,8 +1369,7 @@
                 <div class="about-photo-col">
                     <div class="about-photo-frame">
                         <div class="about-photo-placeholder">
-                            <span class="ph-icon">👤</span>
-                            <span>Upload profile.jpg</span>
+                            <img src="profile.jpeg" alt="Selva Babu Selvamani" class="about-photo">
                         </div>
                         <div class="about-photo-badge">
                             <span class="badge-num">22+</span>
@@ -1416,28 +1413,35 @@
                 <div class="section-label">Experience</div>
                 <h2 class="section-title">Research Journey</h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">Academic and professional milestones in bioinformatics and genomics</p>
+                <p class="section-subtitle">Academic and professional milestones in bioinformatics and computational biology</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>Senior Research Fellow — ICAR-NBAIR, Bangalore <span style="font-size:0.8rem; background:rgba(30,64,175,0.1); color:var(--accent); padding:0.2rem 0.7rem; letter-spacing:1px; font-family:'Raleway',sans-serif; font-weight:600; margin-left:0.5rem; vertical-align:middle;">COMPLETED</span></h3>
+                    <!--<span style="font-size:0.8rem; background:rgba(30,64,175,0.1); color:var(--accent); padding:0.2rem 0.7rem; letter-spacing:1px; font-family:'Raleway',sans-serif; font-weight:600; margin-left:0.5rem; vertical-align:middle;">COMPLETED</span>-->
+                    <h3>Senior Research Fellow — ICAR-NBAIR, Bangalore, India</h3>
                     <span class="timeline-date">March 2023 – January 2026</span>
-                    <p>Conducted advanced bioinformatics analyses including genome assembly, transcriptomics (RNA-Seq), metagenomics, and multi-omics data integration for insect genomics and adaptation studies. Identified RNAi target genes and insecticidal resistance markers in agricultural pests.</p>
+                    <p style="text-align: justify;">Conducted advanced bioinformatics analyses including genome assembly, transcriptomics (RNA-Seq), metagenomics, and multi-omics data integration for insect genomics and adaptation studies. Identified RNAi target genes and insecticidal resistance markers in agricultural pests.</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>M.Sc. Agricultural Bioinformatics — TNAU, Coimbatore</h3>
+                    <h3>Research Intern - TIFR-NCBS, Bangalore, India</h3>
+                    <span class="timeline-date">September 2022 – September 2022</span>
+                    <p style="text-align: justify;">Comparative transcriptomics, functional genomics and orthologs analysis of medicinal plants.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>M.Sc. Agricultural Bioinformatics — TNAU, Coimbatore, India</h3>
                     <span class="timeline-date">2020 – 2022</span>
-                    <p>Specialized in computational genomics, non-coding RNA analysis (miRNA & lncRNA), and next-generation sequencing data analysis. Focused on transcriptomics, functional genomics, and colchicine biosynthesis pathway decoding in Gloriosa superba.</p>
+                    <p style="text-align: justify;">Specialized in computational genomics, non-coding RNA analysis (miRNA & lncRNA), and next-generation sequencing data analysis. Focused on transcriptomics, functional genomics, and colchicine biosynthesis pathway decoding in <i>Gloriosa superba</i>.</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>Research Intern — ICAR-NIPB, New Delhi</h3>
+                    <h3>Research Intern — ICAR-NIPB, New Delhi, India</h3>
                     <span class="timeline-date">Sept 2019 – Dec 2019</span>
-                    <p>Worked on drought-responsive miRNA identification using small RNA sequencing, differential expression analysis, and target gene prediction in rice cultivars at the Genomics Lab, ICAR-National Institute for Plant Biotechnology.</p>
+                    <p style="text-align: justify;">Worked on drought-responsive miRNA identification using small RNA sequencing, differential expression analysis, and target gene prediction in rice cultivars at the Genomics Lab, ICAR-National Institute for Plant Biotechnology.</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>B.Tech Bioinformatics — TNAU, Coimbatore</h3>
+                    <h3>B.Tech Bioinformatics — TNAU, Coimbatore, India</h3>
                     <span class="timeline-date">2016 – 2020</span>
-                    <p>Foundational training in bioinformatics, molecular biology, and computational methods. Developed SSR markers for little millet germplasm characterization and explored QTL analysis for drought tolerance in rice.</p>
+                    <p style="text-align: justify;">Foundational training in bioinformatics, molecular biology, and computational methods. Developed SSR markers for little millet germplasm characterization and explored QTL analysis for drought tolerance in rice.</p>
                 </div>
             </div>
         </div>
@@ -1546,9 +1550,9 @@
             <!-- FILTER TABS -->
             <div class="pub-filter-bar">
                 <button class="pub-tab active" data-filter="all">All <span class="tab-count">15</span></button>
-                <button class="pub-tab" data-filter="journal">Journal Articles <span class="tab-count">11</span></button>
+                <button class="pub-tab" data-filter="journal">Journal Articles <span class="tab-count">12</span></button>
                 <button class="pub-tab" data-filter="book">Book Chapters <span class="tab-count">2</span></button>
-                <button class="pub-tab" data-filter="review">Under Review <span class="tab-count">2</span></button>
+                <button class="pub-tab" data-filter="review">Under Review <span class="tab-count">1</span></button>
             </div>
 
             <div class="publication-item" data-category="journal">
@@ -1590,8 +1594,8 @@
             <div class="publication-item" data-category="book">
                 <p><strong>Selvamani, S.B., Selvapandiyan, U., Kaviyapriya, M., et al.</strong> Epigenetics: RNA-Seq, ChIPSeq, MedIP-Seq and ATAC-Seq. Taylor & Francis. <a href="https://doi.org/10.1201/9781003354062" target="_blank" style="color:var(--accent);">doi:10.1201/9781003354062</a> <span class="under-review">Book Chapter</span></p>
             </div>
-            <div class="publication-item" data-category="review">
-                <p><strong>Jenifer Sheeba J., Selvamani, S.B., & Thiruvengadam, V.</strong> (2025). Gut Microbiota Profiling of Apis cerana indica Across Biodiversity Hotspots in the Western Ghats, India. <em>Molecular Biology Reports</em>. <span class="under-review">Under Review</span></p>
+            <div class="publication-item" data-category="journal">
+                <p><strong>Jenifer Sheeba J., Selvamani, S.B., & Thiruvengadam, V.</strong> (2025). Gut Microbiota Profiling of Apis cerana indica Across Biodiversity Hotspots in the Western Ghats, India. <em>Molecular Biology Reports</em>. <span class="impact-factor">IF: 2.4</span></p>
             </div>
             <div class="publication-item" data-category="review">
                 <p><strong>Selvamani, S.B., Gnanam, R., Karthikeyan, A., Jayakanthan, M., Senthil, N., et al.</strong> Comparative transcriptome analyses of cultivated and wild Gloriosa superba decoding colchicine biosynthetic pathway genes. <em>Plant Molecular Biology Reporter</em>. <span class="under-review">Under Review</span></p>
@@ -1624,35 +1628,41 @@
                 </div>
                 -->
                 <div class="award-card">
+                    <span class="award-icon">🏅</span>
+                    <div class="award-year">2025</div>
+                    <h3>Best Rapid Oral Presentation</h3>
+                    <p>Awarded the Best Rapid Oral Presentation Award by ICAR–National Bureau of Agricultural Insect Resources at the Second International Conference on Biological Control (2ICBC2025) for presenting research on insect genomics and pheromone perception.</p>
+                </div>
+
+                <div class="award-card">
                     <span class="award-icon">🎓</span>
                     <div class="award-year">2022</div>
                     <h3>Academic Achievement — Post Graduate</h3>
                     <p>Achieved a CGPA of 8.69/10 in M.Sc. Agricultural Bioinformatics, ranking among the top performers of the programme.</p>
                 </div>
-                <div class="award-card">
-                    <span class="award-icon">🔬</span>
-                    <div class="award-year">2025</div>
-                    <h3>Best Rapid Oral Presentation</h3>
-                    <p>Awarded the Best Rapid Oral Presentation Award by ICAR–National Bureau of Agricultural Insect Resources at the Second International Conference on Biological Control (2ICBC2025) for presenting research on insect genomics and pheromone perception.</p>
-                </div>
+                <!--
                 <div class="award-card">
                     <span class="award-icon">📄</span>
                     <div class="award-year">2024</div>
                     <h3>High-Impact Publication Recognition</h3>
                     <p>Co-authored a study published in Scientific Data (IF: 5.8) on the miniature genome of broad mite, gaining international research visibility.</p>
                 </div>
+                -->
+
                 <div class="award-card">
-                    <span class="award-icon">🌱</span>
+                    <span class="award-icon">🎓</span>
                     <div class="award-year">2020</div>
                     <h3>Academic Excellence — Under Graduate</h3>
                     <p>Graduated with a CGPA of 8.15/10 in B.Tech Bioinformatics, demonstrating consistent excellence across all four years of undergraduate study.</p>
                 </div>
+                <!--
                 <div class="award-card">
                     <span class="award-icon">✍️</span>
                     <div class="award-year">2022</div>
                     <h3>Springer and Taylor & Francis Book Chapter Contribution</h3>
                     <p>Contributed peer-reviewed book chapters in <em>Omics of Climate Resilient Small Millets</em> and <em>Next-Generation Sequencing: Standard Operating Procedures and Applications</em>, published by Springer Singapore and Taylor &amp; Francis, highlighting early-career contributions to genomics and omics research.</p>
                 </div>
+                -->
             </div>
         </div>
     </section>
@@ -1784,9 +1794,11 @@
                 </div>
             </div>
         </div>
+        <!--
         <p style="text-align:center; margin-top: 2rem; color: var(--text-muted); font-size: 0.95rem; font-style: italic;">
             To add images: replace the placeholder divs with <code style="background:var(--border); padding: 2px 6px; font-style: normal;">&lt;img src="your-file.jpg"&gt;</code> and upload them alongside index.html to GitHub.
         </p>
+        -->
     </section>
 
 <!-- CONTACT -->
